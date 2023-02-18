@@ -18,6 +18,12 @@ Flow | XML | Professional UI building
 &nbsp; <a href="https://www.linkedin.com/in/muhammad-waqas-4399361a3" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>  
 &nbsp; <a href="https://www.facebook.com/waqasyaqeen" target="_blank" rel="noopener noreferrer"><img src="https://user-images.githubusercontent.com/96041723/219870944-9a59e3a3-6a6c-4b14-a554-4bf875907a5c.png" width="50" /></a
 </p>
+
+* [LinkDin](https://www.linkedin.com/in/muhammad-waqas-4399361a3)
+* [Facebook](https://www.facebook.com/waqasyaqeen)
+* [Email](waqaswaseem679@gmail.com)
+* [Whatsapp](+923045593294)
+  
 ## Getting Started:
 ## Why do we need Dependency Injection?
 Well, According to Uncle BOB’s SOLID principles, D stands for Dependency Injection which says that- Any Class should not configure its dependencies itself, but should be configured by some other class from outside.
