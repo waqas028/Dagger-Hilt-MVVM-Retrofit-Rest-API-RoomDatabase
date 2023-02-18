@@ -13,3 +13,52 @@ Quiz Apps, Restaurant Management Apps, Smart E-Tailor Design
 Recommender apps, Finman App, etc.
 Kotlin | OOP | MVVM | Room Database | Firebase | REST API | Kotlin
 Flow | XML | Professional UI building
+
+
+## Getting Started:
+
+### What is Hilt?
+Hilt provides a standard way to incorporate Dagger dependency injection into an Android application.
+###The goals of Hilt are:
+To simplify Dagger-related infrastructure for Android apps.
+To create a standard set of components and scopes to ease setup, readability/understanding, and code sharing between apps.
+To provide an easy way to provision different bindings to various build types (e.g. testing, debug, or release).
+##Adding dependencies
+###App-Level Module
+```
+plugins {
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+dependencies {
+def hilt_version="2.44"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+}
+```
+###Project Gradel 
+```
+buildscript {
+    dependencies {
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.38.1'
+    }
+}
+```
+##Hilt Annotations:-
+these are some of the annotations provided by Hilt
+
+@HiltAndroidApp: we need to apply these annotations to our Application class, It will trigger the Hilt code generation and in the process will create our App Component.
+
+@AndroidEntryPoint: with this annotation Hilt will generate a DI Container for each Android Component so respective components can add the dependencies.
+
+@Inject: with this, we can do Constructor & Field Injection or we can inject any method. Dependencies injected with this annotation will get added into respective.
+
+@AndroidEntryPoint.Fields can not be private.
+
+@ViewModelInject: It will create a dependency for ViewModel and Hilt will return that later.
+
+@Module: It is used as we used in Dagger Modules, when we want to create an object for any component dependency, mostly used for the third party or where we can not do constructor or field injection(classes which we don’t own).
+
+@Singleton: It will create a singleton instance for a dependency, which will be shared across the application.
+
+@ApplicationContext: Can be used to access already defined Application Context, the same way we can also use @ActivityContext to access activity context.
