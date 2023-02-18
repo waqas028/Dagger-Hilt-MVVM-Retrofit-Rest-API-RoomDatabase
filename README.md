@@ -13,8 +13,11 @@ Quiz Apps, Restaurant Management Apps, Smart E-Tailor Design
 Recommender apps, Finman App, etc.
 Kotlin | OOP | MVVM | Room Database | Firebase | REST API | Kotlin
 Flow | XML | Professional UI building
-
-
+<h3> 🤝🏻 Connect with Me </h3>
+<p align="center">
+&nbsp; <a href="https://www.linkedin.com/in/muhammad-waqas-4399361a3" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>  
+&nbsp; <a href="https://www.facebook.com/waqasyaqeen" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/facbook.png" width="50" /></a
+</p>
 ## Getting Started:
 ## Why do we need Dependency Injection?
 Well, According to Uncle BOB’s SOLID principles, D stands for Dependency Injection which says that- Any Class should not configure its dependencies itself, but should be configured by some other class from outside.
