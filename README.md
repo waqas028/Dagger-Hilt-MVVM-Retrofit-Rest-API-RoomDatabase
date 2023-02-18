@@ -16,10 +16,18 @@ Flow | XML | Professional UI building
 
 
 ## Getting Started:
+## Why do we need Dependency Injection?
+Well, According to Uncle BOB’s SOLID principles, D stands for Dependency Injection which says that- Any Class should not configure its dependencies itself, but should be configured by some other class from outside.
+Means dependencies for a class to use should be passed by any other class, and this process is called Dependency Injection.
+Dependency Injection makes our code loosely coupled, which is the main important advantage of using it.
+Once code is loosely coupled we will be having these benefits:-
 
+Easy Code maintenance
+Easy Code Testability
+Easy Refactoring of our code.
 ### What is Hilt?
 Hilt provides a standard way to incorporate Dagger dependency injection into an Android application.
-###The goals of Hilt are:
+### The goals of Hilt are:
 To simplify Dagger-related infrastructure for Android apps.
 To create a standard set of components and scopes to ease setup, readability/understanding, and code sharing between apps.
 To provide an easy way to provision different bindings to various build types (e.g. testing, debug, or release).
@@ -45,28 +53,21 @@ buildscript {
 }
 ```
 ## Hilt Annotations:-
-these are some of the annotations provided by Hilt
+These are some of the annotations provided by Hilt
 
 ### @HiltAndroidApp:
 we need to apply these annotations to our Application class, It will trigger the Hilt code generation and in the process will create our App Component.
-
 ### @AndroidEntryPoint:
 with this annotation Hilt will generate a DI Container for each Android Component so respective components can add the dependencies.
-
 ### @Inject:
 with this, we can do Constructor & Field Injection or we can inject any method. Dependencies injected with this annotation will get added into respective.
-
 ### @AndroidEntryPoint:
 Fields can not be private.
-
 ### @ViewModelInject: 
 It will create a dependency for ViewModel and Hilt will return that later.
-
 ### @Module:
 It is used as we used in Dagger Modules, when we want to create an object for any component dependency, mostly used for the third party or where we can not do constructor or field injection(classes which we don’t own).
-
 ### @Singleton:
 It will create a singleton instance for a dependency, which will be shared across the application.
-
 ### @ApplicationContext:
 Can be used to access already defined Application Context, the same way we can also use @ActivityContext to access activity context.
