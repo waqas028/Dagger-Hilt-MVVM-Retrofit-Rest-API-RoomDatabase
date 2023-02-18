@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    tools:context=".ui.StartScreen">
+    <ImageView
+        android:id="@+id/kotlinimageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.2"
+        android:src="@drawable/img"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/kotlinmvvmtextview"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/kotlinmvvmtextview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.2"
+        android:text="Kotlin MVVM"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/kotlinimageview"
+        app:layout_constraintTop_toTopOf="@id/kotlinimageview"
+        app:layout_constraintBottom_toBottomOf="@id/kotlinimageview"/>
+
+    <ImageView
+        android:id="@+id/hiltimageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/hilt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kotlinimageview"
+        app:layout_constraintWidth_percent="0.7" />
+    <ImageView
+        android:id="@+id/restapiimageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintHeight_percent="0.3"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hiltimageview"
+        app:layout_constraintEnd_toStartOf="@id/restapitextview"
+        app:layout_constraintWidth_percent="0.4" />
+    <TextView
+        android:id="@+id/restapitextview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintHeight_percent="0.2"
+        android:text="Rest API with Retrofit2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/restapiimageview"
+        app:layout_constraintTop_toTopOf="@id/restapiimageview"
+        app:layout_constraintBottom_toBottomOf="@id/restapiimageview"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
