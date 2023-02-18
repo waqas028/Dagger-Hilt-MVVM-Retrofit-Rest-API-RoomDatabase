@@ -20,10 +20,7 @@ Flow | XML | Professional UI building
 * Email:  waqaswaseem679@gmail.com
   
 ## Getting Started:
-![WhatsApp Image 2023-02-18 at 8 54 56 PM](https://user-images.githubusercontent.com/96041723/219875669-41623e21-9519-4ee4-97c9-621e277d4c0b.jpeg)
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/96041723/219875786-6ba73f6c-b808-441a-9c55-5d8e1ff6a5b0.gif)
-
-
 ## Why do we need Dependency Injection?
 Well, According to Uncle BOB’s SOLID principles, D stands for Dependency Injection which says that- Any Class should not configure its dependencies itself, but should be configured by some other class from outside.
 Means dependencies for a class to use should be passed by any other class, and this process is called Dependency Injection.
